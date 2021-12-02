@@ -1,3 +1,3 @@
-#MoGO site layout
+# MoGO site layout
 
 Using positioning and flexbox.
