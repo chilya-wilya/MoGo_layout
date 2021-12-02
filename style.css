@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
@@ -340,20 +340,231 @@
 }
 
 .design-computer {
-    margin-top: 40px;
-    height: 494px;
-    width: 659px;
-    background: url(./images/computer-back.png) no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 15;
+}
+
+.computer-back {
+    margin-top: 30px;
+    position: relative;
+    z-index: 15;
+}
+
+.computer {
+    position: absolute;
+    z-index: 18;
+    top: 10px;
+}
+
+.phone-back {
+    position: relative;
+    top: -300px;
+    right: -300px;
+    z-index: 20;
+}
+
+.phone {
+    position: absolute;
+    top: 495px;
+    right: 357px;
+    z-index: 25;
+}
+
+.we-do {
+    height: 1255px;
+    width: 100%;
+}
+
+.we-do-wrapper {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.we-do-content {
+    display: flex;
+    gap: 30px;
+}
+
+.content-column {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    gap: 20px;
+}
+
+.column-item:first-child {
+    width: 570px;
+    height: 255px;
+    border: 1px solid #C6CBCD;
+}
+
+.column-item {
+    width: 570px;
+    height: 92px;
+    border: 1px solid #C6CBCD;
+    border-collapse: collapse;
+}
+
+.item-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 30px 100px;
+}
+
+.item-title-selected {
+    border: 1px solid #C6CBCD;
+    border-collapse: collapse;
+}
+
+.item-text {
+    padding: 10px 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: #2D3033;
+    overflow-y: scroll;
+    height: 155px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #95E1D3;
+}
+
+.we-do-comment {
+    width: 100%;
+    height: 255px;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding-top: 45px;
+}
+
+.comment-image {
+    height: 170px;
+    width: 170px;
+    border: 2px solid #95E1D3;
+}
+
+.comment-content {
+    width: 770px;
+    padding-top: 10px;
+}
+
+.comment-content-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    text-align: left;
+    color: #A9AFB1;
+    margin-bottom: 20px;
+    
+}
+
+.comment-content-sign {
+    display: flex;
+    height: 55px;
+    align-items: center;
+    gap: 50px;
+}
+
+.comment-content-line {
+    width: 70px;
+    height: 1px;
+    border-bottom: 4px solid #F38281;
+}
+
+.comment-content-name {
+    font-family: 'Kaushan Script', sans-serif;   
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.team {
+    height: 1300px;
+    width: 100%;
+}
+
+.team-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.team-image-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.team-image-one {
     position: relative;
 }
 
-.design-computer::after {
-    position: absolute;
+.team-image-one::before {
     content: "";
-    height: 525px;
-    width: 1170px;
-    background: url(./images/computer.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: linear-gradient(rgba(233, 130, 131, 0.9),rgba(237, 215, 137, 0.9));
+    height: 424px;
+    width: 370px;
+    top: -16px;
+    right: 16px;
     z-index: 1;
-    right: -250px;
-    top: -15px;
+}
+
+.team-name-wrapper {
+    display: flex;
+    width: 1220px;
+}
+
+.team-name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2D3033;
+    margin: 35px 0;
+}
+
+.team-prof {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2D3033;
+    margin-bottom: 84px;
+}
+
+.team-icons-line {
+    width: 100%;
+    height: 211px;
+    background-color: #F8F8F8;
 }
